@@ -1,0 +1,50 @@
+.o-header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #703b09;
+  padding:5px 1rem 0 1rem;
+}
+
+.o-header-logo-container
+{
+    background-color:white;
+    border-radius:6px;
+    width:3.8rem;
+    padding:7px 10px;
+}
+
+.o-header-logo
+{
+  width:2.7rem;
+  margin:0 auto;
+}
+
+.n-navbar-menu
+{
+  width:13rem;
+}
+
+.n-navbar-list
+{
+    display: flex;
+    width:100%;
+    color: white;
+    list-style-type: none;
+}
+
+
+.n-navbar-link
+{
+    padding:1rem 14px;
+    cursor: pointer;
+}
+
+.n-navbar-link:hover,
+.active-link
+{
+   background-color:rgba(255, 255, 255, 0.219);
+   border-bottom:4px solid #40a4c8;
+}
+
