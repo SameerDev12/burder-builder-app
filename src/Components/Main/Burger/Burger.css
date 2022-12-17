@@ -1,0 +1,89 @@
+.burger-container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1rem;
+  margin:4rem auto 0 auto;
+  min-height:60vh;
+  max-height:60vh;
+  overflow-y: scroll;
+  width:32rem;
+}
+
+.burger-upper,
+.burger-lower
+{
+    width:26rem;
+    box-shadow: inset -15px 0  #c15711;
+}
+
+.burger-upper
+{
+   max-height:7rem;
+   min-height:7rem;
+   background: rgb(188,88,30);
+   background: linear-gradient(180deg, #bc581e 0%, rgba(226,123,54,1) 90%);
+   border-radius:50% 50% 0 0;
+   box-shadow: inset -15px 0  #c15711;
+}
+
+.burger-lower
+{
+    max-height:4rem;
+    min-height:4rem;
+    background: rgb(188,88,30);
+    background: linear-gradient(321deg, #f08e4a 0%,#e27b36 90%);
+    border-radius:0 0 30px 30px;
+}
+
+.burger-product-container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;
+}
+
+.Lettuce,
+.Bacon,
+.Cheese,
+.Meat
+{
+  width:28rem;
+}
+
+.Lettuce
+{
+  background: rgb(34,140,29);
+  background: linear-gradient(183deg, rgba(34,140,29,1) 0%, rgba(145,206,80,1) 90%);
+  border-radius:25px;
+  padding:1.2rem;
+}
+
+.Bacon
+{
+  background: rgb(191,56,19);
+  background: linear-gradient(183deg, rgba(191,56,19,1) 0%, rgba(196,94,56,1) 90%);
+  padding:8px;
+  width:26rem;
+}
+
+.Cheese
+{
+  background: rgb(244,208,4);
+  background: linear-gradient(183deg, rgba(244,208,4,1) 0%, rgba(214,187,34,1) 90%);
+  padding:10px;
+  width:30rem;
+  border-radius:25px;  
+}
+
+
+.Meat
+{
+  border-radius:25px;  
+  padding:1.3rem;
+  width:26.2rem;
+  background: rgb(127,54,8);
+  background: linear-gradient(183deg, rgba(127,54,8,1) 0%, rgba(112,46,5,1) 90%);  
+}
