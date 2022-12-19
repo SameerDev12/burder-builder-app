@@ -2,9 +2,12 @@ import React,{useState} from 'react';
 import './Burger/Burger';
 import Burger from './Burger/Burger';
 import BurgerController from './Build_controller/BurgerController';
+import Form from './Form/Form';
+
 
 
 const Main = () => {
+
 //Products
 const [Products,setProducts]=useState({
   Lettuce:[],
@@ -17,12 +20,12 @@ const [Products,setProducts]=useState({
 const ProductPrices={
   Lettuce:1.00,
   Bacon:1.5,
-  Cheese:2.00, 
+  Cheese:2.00,
   Meat:3.00,  
 };
 
 //Total Price
-const [TotalPrice,setTotalPrice]=useState(0.00);
+const [TotalPrice,setTotalPrice]=useState(3.00);
 
 //Product Names 
 const ProductsName=["Lettuce","Bacon","Cheese","Meat"];
@@ -36,7 +39,7 @@ const ProductAdder=(e,name)=>
       const btn=e.target.innerHTML;
       if(btn==="More")
       {
-        Products[name].push(<div className={Pname}></div>);
+        Products[name].push(<div key={Products[name].length-1} className={Pname}></div>);
         setTotalPrice(TotalPrice+ProductPrices[name]);
       }
       else
@@ -54,8 +57,16 @@ const ProductAdder=(e,name)=>
 
 return (
   <>
+    {/*Mounting the Burger Component*/}
     <Burger AddedProducts={Products}/>
-    <BurgerController TotalPrice={TotalPrice} Products={Products} ProductsName={ProductsName} ProductAdder={ProductAdder} />
+
+    {/*Mounting the Burger Controller*/}
+    <BurgerController 
+      TotalPrice={TotalPrice} 
+      Products={Products} 
+      ProductsName={ProductsName} 
+      ProductAdder={ProductAdder} 
+    />
   </>
 )
 }

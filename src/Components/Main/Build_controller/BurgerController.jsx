@@ -27,7 +27,7 @@ return (
       ))}
     </div>
     {
-      TotalPrice!==0?
+      TotalPrice!==3?
       <button className='btn-order'>SIGN UP TO ORDER</button>
       :
       <button disabled className='btn-order btn-order-disable'>SIGN UP TO ORDER</button>

@@ -1,0 +1,64 @@
+.f-form
+{
+    display: flex;
+    justify-content: center;
+    padding-top:3rem;
+}
+
+
+.f-form-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:2rem;
+    padding:2rem 1.5rem;
+    box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.f-input
+{
+    padding:10px;
+    width:29rem;
+    font-size:1rem;
+    border:none;
+    outline:none;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.212);
+}
+
+.f-input:focus
+{
+    background-color: rgba(116, 116, 179, 0.377);
+}
+
+.f-btn-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
+    margin:0 auto;
+}
+
+.f-btn
+{
+    background-color: transparent;
+    cursor:pointer;
+    font-size:1rem;
+    padding:5px;
+    font-weight:600;
+    border:none;
+}
+
+.f-btn-submit
+{
+    color: #5C9210;
+}
+
+.f-btn-reg
+{
+    color: #944317;
+}
+
+
+

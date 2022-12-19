@@ -16,19 +16,19 @@ const Burger = ({AddedProducts}) => {
          }
   
          {
-           AddedProducts["Lettuce"].map(data=>(<h1>{data}</h1>))
+           AddedProducts["Lettuce"].map((data)=>(data))
          }
   
          {
-           AddedProducts["Bacon"].map(data=>(<h1>{data}</h1>))
+           AddedProducts["Bacon"].map((data)=>(data))
          }
   
          {
-           AddedProducts["Cheese"].map(data=>(<h1>{data}</h1>))
+           AddedProducts["Cheese"].map((data)=>(data))
          }
   
          {
-           AddedProducts["Meat"].map(data=>(<h1>{data}</h1>))
+           AddedProducts["Meat"].map((data)=>(data))
          }       
        </div>       
        <div className="burger-lower"></div>
