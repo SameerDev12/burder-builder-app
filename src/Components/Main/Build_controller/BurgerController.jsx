@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Build_controller.css';
 
 
@@ -28,7 +29,7 @@ return (
     </div>
     {
       TotalPrice!==3?
-      <button className='btn-order'>SIGN UP TO ORDER</button>
+      <button className='btn-order'><Link className='link-order' to={'/form'}>SIGN UP TO ORDER</Link></button>
       :
       <button disabled className='btn-order btn-order-disable'>SIGN UP TO ORDER</button>
     }

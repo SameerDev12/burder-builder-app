@@ -66,6 +66,11 @@
   background-color:#ccc91e;
 }
 
+.link-order
+{
+  text-decoration: none;
+  color: #966909;
+}
 
 .btn-disable
 {
